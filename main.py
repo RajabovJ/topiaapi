@@ -11,7 +11,7 @@ app = FastAPI(
     version="1.0.0",
 )
 
-model_path = "./tomatoDiseaseClassifier"
+model_path = "rajabovv/tomatoDiseaseClassifier"
 processor = AutoImageProcessor.from_pretrained(model_path)
 model = AutoModelForImageClassification.from_pretrained(model_path)
 model.eval()
